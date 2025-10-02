@@ -17,7 +17,6 @@ namespace Lab05_01
             SetDefaultFormat();
         }
 
-        // Khởi tạo dữ liệu cho ComboBox
         private void InitComboBox()
         {
             // Fonts
@@ -31,7 +30,6 @@ namespace Lab05_01
                 cmbSize.Items.Add(s);
         }
 
-        // Giá trị mặc định ban đầu
         private void SetDefaultFormat()
         {
             cmbFonts.SelectedItem = "Tahoma";
@@ -39,7 +37,6 @@ namespace Lab05_01
             richText.Font = new Font("Tahoma", 14);
         }
 
-        // ===== Menu Hệ thống =====
         private void menuNew_Click(object sender, EventArgs e)
         {
             richText.Clear();
@@ -85,7 +82,6 @@ namespace Lab05_01
             this.Close();
         }
 
-        // ===== Menu Định dạng (FontDialog) =====
         private void menuFont_Click(object sender, EventArgs e)
         {
             FontDialog fontDlg = new FontDialog();
@@ -134,7 +130,6 @@ namespace Lab05_01
             }
         }
 
-        // ===== Thay đổi Font & Size từ ComboBox =====
         private void cmbFonts_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbFonts.SelectedItem != null && richText.SelectionFont != null)
@@ -155,7 +150,6 @@ namespace Lab05_01
             }
         }
 
-        // ===== Đếm số từ và hiển thị ở StatusStrip =====
         private void richText_TextChanged(object sender, EventArgs e)
         {
             string text = richText.Text.Trim();
@@ -164,3 +158,4 @@ namespace Lab05_01
         }
     }
 }
+
