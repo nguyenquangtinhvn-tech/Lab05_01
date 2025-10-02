@@ -8,7 +8,7 @@ namespace Lab05_01
 {
     public partial class Form1 : Form
     {
-        private string currentFile = ""; // lưu đường dẫn file hiện tại
+        private string currentFile = ""; 
 
         public Form1()
         {
@@ -158,4 +158,5 @@ namespace Lab05_01
         }
     }
 }
+
 
